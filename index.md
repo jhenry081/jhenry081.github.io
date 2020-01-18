@@ -1,6 +1,6 @@
 layout: page,
-title: "About",
-permalink: /about/
+title: "Blog",
+permalink: /
 
 Shakespeare once said:
 > To be or not to be, that is the question
