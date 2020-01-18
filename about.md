@@ -1,6 +1,6 @@
-layout: page,
-title: "About",
-permalink: /about/
+title: "About"
+description: >- All about the blog
+baseurl: /about/
 
 Shakespeare once said:
 > To be or not to be, that is the question
