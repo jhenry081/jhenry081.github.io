@@ -1,5 +1,3 @@
-title: "About"
-description: >- All about the blog
 baseurl: /about/
 
 Shakespeare once said:

@@ -1,6 +1,5 @@
-layout: page,
-title: "Blog",
-permalink: /
+### Welcome to my blog!
 
-Shakespeare once said:
-> To be or not to be, that is the question
+```Javascript 
+console.log("This message will be outputted in the console")
+```
