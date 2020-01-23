@@ -1,5 +1,4 @@
-### Welcome to my blog!
+# Joan Henry
 
-```Javascript 
-console.log("This message will be outputted in the console")
-```
+To quote a legend:
+> It always seems impossible until it is done
