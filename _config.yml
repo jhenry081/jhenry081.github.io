@@ -8,3 +8,15 @@ twitter_username: iamjoanhenry
 github_username:  jhenry081
 
 theme: jekyll-theme-slate
+# In _config.yml
+...
+defaults:
+  -
+    scope:
+      path: "projects"
+      type: "pages"
+    values:
+      layout: "project"
+      author: "Mr. Hyde"
+      category: "project"
+...
