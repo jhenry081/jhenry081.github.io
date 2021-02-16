@@ -4,5 +4,4 @@ title: Home
 permalink: /
 
 ---
-
-### {{ "Site under construction!" | capitalize }}
+## {{ "Site under construction!" | capitalize }}
