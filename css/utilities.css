@@ -2,7 +2,8 @@
           Flex Layout
 *******************************/
 
-.flex, .flex.horizontal,
+.flex,
+.flex.horizontal,
 .flex.horizontal-reverse,
 .flex.vertical,
 .flex.vertical-reverse {
@@ -232,7 +233,8 @@
 }
 
 /* IE 10 support for HTML5 hidden attr */
-[hidden], .hidden {
+[hidden],
+.hidden {
   display: none !important;
 }
 
@@ -293,4 +295,8 @@ body.fullbleed {
   top: 0;
   bottom: 0;
   left: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
