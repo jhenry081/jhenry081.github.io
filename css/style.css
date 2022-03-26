@@ -43,10 +43,6 @@ html {
   --tab-width: 120px;
 }
 
-body {
-  font-family: var();
-}
-
 p {
   font-size: 72px;
 }
