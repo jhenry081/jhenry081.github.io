@@ -10,21 +10,13 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+  background: #9f526430;
+}
+
 :root {
-  --dark-navy: #020c1b;
-  --navy: #0a192f;
-  --light-navy: #112240;
-  --lightest-navy: #233554;
-  --navy-shadow: rgba(2, 12, 27, 0.7);
-  --dark-slate: #495670;
-  --slate: #8892b0;
-  --light-slate: #a8b2d1;
-  --lightest-slate: #ccd6f6;
+  --primary: #9f5264;
   --white: #e6f1ff;
-  --green: #64ffda;
-  --green-tint: rgba(100, 255, 218, 0.1);
-  --pink: #f57dff;
-  --blue: #57cbff;
   --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
     system-ui, sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
@@ -43,6 +35,140 @@ html {
   --tab-width: 120px;
 }
 
-p {
-  font-size: 72px;
+body {
+  width: 100%;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+/* navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 300;
+  padding-left: 1.25rem;
+}
+
+.nav-links-container {
+  display: flex;
+  list-style: none;
+}
+
+.links {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 5px;
+  padding: 10px;
+  text-transform: capitalize;
+  font-size: 1rem;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.links.active,
+.links:hover {
+  opacity: 1;
+}
+
+/* header */
+
+header {
+  width: 80%;
+  height: 91vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-heading {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1.25rem;
+}
+
+.header-heading .brand-name {
+  display: block;
+  text-transform: capitalize;
+  font-size: 4.5rem;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.brand-name span {
+  color: var(--primary);
+}
+
+.header-img {
+  width: 370px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.heading {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.social-img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.4;
+  transition: 0.5s;
+}
+
+.social-img:hover {
+  opacity: 1;
+}
+
+footer {
+  padding: 1.75rem;
+  background-color: var(--primary);
+  color: #fff;
+}
+
+/* MEDIA QUERIES */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: aqua;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: #ffebcd;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: coral;
+  }
 }
