@@ -39,6 +39,7 @@ body {
   width: 100%;
   position: relative;
   font-family: "Roboto", sans-serif;
+  background-color: #ffebcd;
 }
 
 /* navbar */
@@ -154,21 +155,62 @@ footer {
 /* MEDIA QUERIES */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: aqua;
+  header {
+    width: 100%;
+    height: 91vh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+
+  .header-heading {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .header-heading .brand-name {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+
+  .header-img {
+    width: 185px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+
+  .social-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .social-img {
+    width: 25px;
+    height: 25px;
+    opacity: 0.4;
+    transition: 0.5s;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  body {
-    background-color: #ffebcd;
+  header {
+    align-content: center;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  body {
-    background-color: coral;
+@media only screen and (min-width: 768px) {
+  header {
+    width: 100%;
+    height: 91vh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
   }
 }
