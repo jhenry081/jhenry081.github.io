@@ -1,0 +1,111 @@
+/* ===========================
+   Joan Henry — Portfolio CSS
+   =========================== */
+
+/* Base */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #333;
+  background: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+
+/* Progress bar */
+#progress {
+  position: fixed;
+  top: 56px; /* height of navbar */
+  left: 0;
+  width: 100%;
+  height: 3px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background: transparent;
+  z-index: 1050;
+}
+
+#progress::-webkit-progress-bar  { background: transparent; }
+#progress::-webkit-progress-value { background: #4a90e2; }
+#progress::-moz-progress-bar     { background: #4a90e2; }
+
+/* Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  padding: 0.6rem 1rem;
+}
+
+.navbar-brand.title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.navbar-brand.title:hover { color: #4a90e2; }
+
+.nav-link {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #444 !important;
+  letter-spacing: 0.03em;
+  padding: 0.4rem 0.8rem !important;
+  transition: color 0.2s;
+}
+
+.nav-link:hover,
+.nav-item.active .nav-link {
+  color: #4a90e2 !important;
+}
+
+/* Hamburger icon bars */
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #555;
+  margin: 4px 0;
+  border-radius: 1px;
+  transition: all 0.3s;
+}
+
+/* Profile image */
+.profile-img {
+  max-width: 220px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Sections */
+section { scroll-margin-top: 70px; }
+
+/* Table */
+.table td { padding: 0.5rem 0.75rem; vertical-align: top; }
+
+/* Social links */
+.social-links a {
+  color: #555;
+  transition: color 0.2s;
+}
+
+.social-links a:hover { color: #4a90e2; }
+
+/* Footer */
+footer {
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  font-size: 0.85rem;
+}
+
+/* Links */
+a { color: #4a90e2; }
+a:hover { color: #2a70c2; text-decoration: underline; }
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .profile-img { max-width: 160px; margin-top: 1.5rem; }
+}
