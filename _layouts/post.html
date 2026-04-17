@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<div class="container mt-5 pt-5">
+  <article class="pt-4">
+
+    <div class="mb-4">
+      <a href="{{ '/blog/' | relative_url }}" class="text-muted small">&larr; All posts</a>
+    </div>
+
+    <header class="mb-4">
+      <h1>{{ page.title }}</h1>
+      <p class="text-muted">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        {% if page.categories.size > 0 %}
+          &middot;
+          {% for cat in page.categories %}
+            <span class="badge badge-light">{{ cat }}</span>
+          {% endfor %}
+        {% endif %}
+      </p>
+      {% if page.description %}
+        <p class="lead">{{ page.description }}</p>
+      {% endif %}
+    </header>
+
+    <hr class="mb-4" />
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    <hr class="mt-5 mb-4" />
+
+    <div class="d-flex justify-content-between text-muted small pb-5">
+      {% if page.previous %}
+        <a href="{{ page.previous.url | relative_url }}">&larr; {{ page.previous.title }}</a>
+      {% else %}
+        <span></span>
+      {% endif %}
+      {% if page.next %}
+        <a href="{{ page.next.url | relative_url }}">{{ page.next.title }} &rarr;</a>
+      {% endif %}
+    </div>
+
+  </article>
+</div>

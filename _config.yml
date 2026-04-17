@@ -1,0 +1,19 @@
+title: Joan Henry
+description: Data Scientist passionate about turning complex data into actionable insights.
+baseurl: ""
+url: "https://jhenry081.github.io"
+github_username: jhenry081
+
+permalink: /blog/:year/:month/:day/:title/
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - SESSION.md
+  - INSTRUCTIONS.md
+  - Gemfile
+  - Gemfile.lock

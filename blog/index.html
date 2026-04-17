@@ -1,0 +1,29 @@
+---
+layout: default
+title: Blog
+---
+<div class="container mt-5 pt-5">
+  <section class="pt-4">
+
+    <h2 class="mb-4">Blog</h2>
+
+    {% for post in site.posts %}
+    <div class="blog-list-item mb-4">
+      <span class="blog-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+      <h5 class="mt-1 mb-1">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h5>
+      {% if post.description %}
+        <p class="text-muted mb-1">{{ post.description }}</p>
+      {% else %}
+        <p class="text-muted mb-1">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+      {% endif %}
+      <a href="{{ post.url | relative_url }}" class="blog-read-more">Read more &rarr;</a>
+    </div>
+    <hr />
+    {% else %}
+    <p class="text-muted">No posts yet.</p>
+    {% endfor %}
+
+  </section>
+</div>
