@@ -5,4 +5,8 @@ Gemfile.lock
 vendor/
 .sass-cache/
 INSTRUCTIONS.md
-SESSION.md 
+SESSION.md
+
+# Local secret overrides — never commit these
+_config.local.yml
+_config.secrets.yml
