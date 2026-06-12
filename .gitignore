@@ -4,9 +4,4 @@ _site/
 vendor/
 .sass-cache/
 INSTRUCTIONS.md
-<<<<<<< HEAD
 SESSION.md
-
-=======
-SESSION.md 
->>>>>>> parent of 050f849 (Feature: Added & switeched to GitHub actions workflow for secret variables)
