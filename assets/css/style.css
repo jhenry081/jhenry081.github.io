@@ -157,6 +157,134 @@ a:hover { color: #d94840; text-decoration: underline; }
   text-decoration: underline;
 }
 
+/* ── Mentorship & Guidance ─────────────────────────── */
+.mentorship-subheading {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #aaa;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+.booking-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 2rem;
+  background: #fafafa;
+  transition: box-shadow 0.2s;
+}
+
+.booking-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+.session-badge {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #fe615a;
+  color: #fe615a;
+  border-radius: 20px;
+  padding: 0.2rem 0.9rem;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.btn-book {
+  display: inline-block;
+  background: #fe615a;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.55rem 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-book:hover {
+  background: #d94840;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-outline-brand {
+  display: inline-block;
+  border: 1px solid #fe615a;
+  color: #fe615a;
+  border-radius: 4px;
+  padding: 0.4rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-outline-brand:hover {
+  background: #fe615a;
+  color: #fff;
+  text-decoration: none;
+}
+
+.video-card {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  opacity: 0.7;
+}
+
+.video-thumb-placeholder {
+  background: #f5f5f5;
+  height: 148px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+  font-size: 2.8rem;
+}
+
+.video-card-body {
+  padding: 0.75rem 1rem;
+}
+
+.guide-card {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+  opacity: 0.75;
+  transition: box-shadow 0.2s;
+}
+
+.guide-icon {
+  font-size: 2.5rem;
+  color: #fe615a;
+  opacity: 0.35;
+  margin-bottom: 0.75rem;
+}
+
+.guide-title {
+  font-size: 0.88rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.coming-soon-badge {
+  display: inline-block;
+  background: #f0f0f0;
+  color: #aaa;
+  border-radius: 20px;
+  padding: 0.15rem 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
 /* Responsive adjustments */
 @media (max-width: 767px) {
   .profile-img { max-width: 160px; margin-top: 1.5rem; }
