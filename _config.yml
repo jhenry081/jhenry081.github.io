@@ -1,8 +1,4 @@
 title: Joan Henry
-# google_analytics is intentionally absent here.
-# For local dev:  set it in _config.local.yml (gitignored).
-# For production: set it via the GOOGLE_ANALYTICS_ID GitHub Actions secret
-#                 — the workflow writes it into _config.secrets.yml at build time.
 description: Data Scientist passionate about turning complex data into actionable insights.
 baseurl: ""
 url: "https://jhenry081.github.io"
